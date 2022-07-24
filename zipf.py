@@ -69,5 +69,5 @@ def zipf(words, num_words_to_graph):
 
 words = get_words_from_file("sherlock holmes.txt")
 
-zipf(words, 1000)
+zipf(words, 100)
 
