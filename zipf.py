@@ -33,9 +33,6 @@ def make_most_frequent_words_barchart(word_dict, num_words_to_graph):
   frequencies = list(top_words_dict.values())
   ranks = np.arange(1, len(frequencies)+1)
 
-  frequencies_log = list(map(log, frequencies))
-  ranks_log = list(map(log, ranks))
-
   plt.style.use("ggplot")
 
   plt.title("Zipf's law in Sherlock Holmes")
@@ -51,8 +48,6 @@ def make_most_frequent_words_barchart(word_dict, num_words_to_graph):
   
   plt.show()
 
-def log(num):
-  return math.log(num)
 
 def get_words_from_file(file_name):
   str_of_words = ""
